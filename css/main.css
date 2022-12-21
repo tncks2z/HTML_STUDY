@@ -32,6 +32,8 @@ li {
 }
 .container {
 	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .header {
 	width: 100%;
@@ -58,30 +60,29 @@ li {
 .left-content {
 	width: 70%;
 	float: left;
-	height: 200px;
+	height: 300px;
 }
 .writer-info {
 	width: 30%;
-	height: 80px;
+	height: 90px;
 }
 .writer-writing {
-	width: 100%;
-	height: 120px;
+	height: 110px;
+	width: 90%;
 }
 .wrtier-profile {
 	width: 50%;
-	height: 100%;
 	float: left;
 }
 .writer-name {
-	padding-top: 15px;
-	width: 40%;
+	width: 50%;
+	padding-top: 18px;
 	float: right;
 }
 .right-content {
-	width: 200px;
-	margin: 10px;
-	height: 200px;
+	margin-top: 30px;
+	width: 30%;
+	height: auto;
 	float: right;
 }
 img {
