@@ -1,6 +1,5 @@
 body {
 	margin-top: 30px;
-	text-align: center;
 }
 .profile {
 	width: 130px;
@@ -43,17 +42,49 @@ li {
 	width: 20%;
 	height: 400px;
 	background-color: cornflowerblue;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+	/* float: left; */
 }
 .content {
-	width: 80%;
-	height: 400px;
-	background-color: coral;
-	float: right;
+	display: block;
 }
 .footer {
 	width: 100%;
 	height: 50px;
 	background-color: gray;
-	clear: both;
+	/* clear: both; */
+}
+.left-content {
+	width: 70%;
+	float: left;
+	height: 200px;
+}
+.writer-info {
+	width: 30%;
+	height: 80px;
+}
+.writer-writing {
+	width: 100%;
+	height: 120px;
+}
+.wrtier-profile {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.writer-name {
+	padding-top: 15px;
+	width: 40%;
+	float: right;
+}
+.right-content {
+	width: 200px;
+	margin: 10px;
+	height: 200px;
+	float: right;
+}
+img {
+	width: 100%;
+	height: 100%;
 }
