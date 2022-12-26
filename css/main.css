@@ -1,7 +1,9 @@
 body {
 	margin: 0px;
 }
-div {
+div,
+input,
+textarea {
 	box-sizing: border-box;
 }
 .profile {
@@ -12,9 +14,8 @@ div {
 }
 h3 {
 	font-size: 30px;
-	color: coral;
 	letter-spacing: 3px;
-	text-align: center;
+	/* text-align: center; */
 }
 .box {
 	width: 200px;
@@ -154,4 +155,46 @@ img {
 	margin: auto;
 	top: -40px;
 	box-sizing: border-box; /* 박스 사이즈를 padding과 border포함으로 변경시켜주는 효과 */
+}
+.text-input {
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.form-background {
+	background-color: black;
+	padding: 30px;
+}
+.form-whiteground {
+	padding: 30px;
+	margin: 30px;
+	width: 80%;
+	background-color: white;
+	margin: auto;
+}
+form p {
+	margin-bottom: 5px;
+}
+.w-100 {
+	width: 100%;
+	padding: 10px;
+}
+.w-50 {
+	width: 50%;
+	padding: 10px;
+	float: left;
+}
+.yellow-button {
+	padding: 10px;
+	float: right;
+	background-color: orange;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	width: 20%;
+}
+.mt-10 {
+	margin-top: 10px;
 }
