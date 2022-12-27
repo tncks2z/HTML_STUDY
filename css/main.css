@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+	font-size: 20px;
 }
 div,
 input,
@@ -105,10 +106,6 @@ li {
 	width: 30%;
 	height: auto;
 	float: right;
-}
-img {
-	width: 100%;
-	height: 100%;
 }
 .main-background {
 	position: relative;
@@ -221,11 +218,14 @@ form p {
 .table-background {
 	background-color: white;
 	border-radius: 5px;
+	width: 100%;
 }
 table {
 	border-collapse: collapse; /* 테이블 간격을 없애주는 기능 */
 	table-layout: auto;
 	border-style: hidden;
+	width: 100%;
+	font-size: 20px;
 }
 tr,
 td,
