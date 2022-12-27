@@ -180,6 +180,7 @@ form p {
 .w-100 {
 	width: 100%;
 	padding: 10px;
+	display: inline-block;
 }
 .w-50 {
 	width: 50%;
@@ -195,6 +196,14 @@ form p {
 	border-radius: 5px;
 	width: 20%;
 }
-.mt-10 {
-	margin-top: 10px;
+.checkbox {
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse; /* 테이블 간격을 없애주는 기능 */
+	font-size: 100px;
+}
+tr,
+td {
+	border: 1px solid black;
 }
