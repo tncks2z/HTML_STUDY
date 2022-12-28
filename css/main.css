@@ -243,4 +243,26 @@ th {
 	background-color: rgb(3, 60, 110);
 	color: white;
 	border-radius: 5px;
+	cursor: pointer;
 }
+.payment-button:hover {
+	background-color: darkblue;
+}
+.payment-button:focus {
+	background-color: blue;
+}
+.payment-button:active {
+	background-color: deepskyblue;
+}
+.custom-link {
+	/* text-decoration: none; */
+	color: rgb(3, 60, 110);
+}
+/* 방문전링크 스타일링 */
+.custom-link:link {
+	color: rgb(3, 60, 110);
+}
+/* 방문후링크 스타일링 */
+/* .custom-link:visited {
+	color: violet;
+} */
