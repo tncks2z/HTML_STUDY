@@ -278,6 +278,27 @@ th {
 .custom-link:link {
 	color: rgb(3, 60, 110);
 }
+.flex-container {
+	display: flex;
+	justify-content: center; /* 좌우 정렬 */
+	/* flex-direction: column; 세로로 배치 */
+	flex-wrap: wrap; /* width가 클 시, 밑으로 보내고 싶을 때 */
+	align-items: center; /* 상하 정렬 */
+	background-color: plum;
+	padding: 5px;
+}
+.flex-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	width: 100px;
+	height: 50px;
+	color: white;
+	box-sizing: border-box;
+	margin-right: 30px;
+	/* margin: 10px; */
+}
 /* 방문후링크 스타일링 */
 /* .custom-link:visited {
 	color: violet;
