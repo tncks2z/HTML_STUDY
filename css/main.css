@@ -1,6 +1,22 @@
+@font-face {
+	font-family: 'tvn';
+	src: url('../font/tvN\ 즐거운이야기OTF\ Medium.otf');
+}
+@font-face {
+	font-family: 'BMJua';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot');
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot?#iefix') format('embedded-opentype'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff2') format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff') format('woff'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf') format('truetype');
+	font-display: swap;
+}
 body {
 	margin: 0px;
 	font-size: 20px;
+	font-family: 'BMJua';
 }
 div,
 input,
