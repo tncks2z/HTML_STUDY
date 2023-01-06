@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'tvn';
+	src: url('../font/tvN\ 즐거운이야기OTF\ Medium.otf');
+}
+@font-face {
+	font-family: 'BMJua';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot');
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot?#iefix') format('embedded-opentype'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff2') format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff') format('woff'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf') format('truetype');
+	font-display: swap;
+}
+body {
+	margin: 0px;
+	font-family: 'BMJua';
+	font-size: 1.2rem;
+}
+div,
+input,
+textarea {
+	box-sizing: border-box;
+}
+.w-100 {
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.w-50 {
+	margin: auto;
+	width: 50%;
+	box-sizing: border-box;
+}
+.w-25 {
+	width: 25%;
+	box-sizing: border-box;
+}
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* align-items: center; */
+}
+.fc-white {
+	color: white;
+}
+img {
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+}
+button {
+	border: none;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: rgb(68, 68, 69);
+	color: white;
+}
+.layout1 {
+	padding-bottom: 0px;
+}
+.icon-wrap {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background-color: white;
+	border-radius: 50px;
+	padding-top: 23px;
+}
+i {
+	color: rgb(82, 96, 186);
+}
+.layout4 {
+	padding: 80px;
+}
+.imgbox {
+	height: 30vw;
+	text-align: left;
+	padding: 40px;
+	background-repeat: no-repeat;
+	background: rgba(0, 0, 0, 0.4);
+	background-blend-mode: darken;
+	max-width: 50%;
+	max-height: 450px;
+}
+.bottombar .icon-wrap {
+	padding-top: 18px;
+	background-color: rgb(82, 96, 186);
+	width: 70px;
+	height: 70px;
+}
+.bottombar i {
+	color: white;
+}
