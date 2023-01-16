@@ -26,17 +26,13 @@ textarea {
 .main-background {
 	width: 100%;
 	background-color: #f7f9fc;
-	padding-top: 100px;
-	height: 75rem;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 .white-box {
 	background-color: white;
 	box-sizing: border-box;
 	border-radius: 10px;
-}
-.profile-1 .white-box {
-	margin: auto;
-	width: 100%;
 }
 button {
 	background-color: #6fbaf8;
@@ -59,9 +55,28 @@ a {
 	border-bottom: 3px solid;
 	border-color: lightgrey;
 }
-.profile-2 .col-xl-2 {
+.profile-2 .col-2 {
 	border-color: #6fbaf8;
 }
 .profile-2 .white-box {
 	box-sizing: border-box;
+}
+.profile-2-1 {
+	height: 25rem;
+}
+.profile-2-2 {
+	height: 38rem;
+}
+@media screen and (max-width: 1028px) {
+	.profile-2-1 {
+		height: 20rem;
+	}
+	.profile-2-2 {
+		height: 30rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.profile-2-2 {
+		height: 35rem;
+	}
 }
