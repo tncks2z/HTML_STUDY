@@ -386,9 +386,11 @@ progress {
 }
 progress::-webkit-progress-bar {
 	background-color: blue;
+	border-radius: 10px;
 }
 progress::-webkit-progress-value {
 	background-color: red;
+	border-radius: 10px;
 }
 /* 태블릿 사이즈 */
 @media screen and (max-width: 1200px) {
