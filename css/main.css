@@ -381,6 +381,15 @@ th {
 	color: purple;
 	font-size: 30px;
 }
+progress {
+	appearance: none;
+}
+progress::-webkit-progress-bar {
+	background-color: blue;
+}
+progress::-webkit-progress-value {
+	background-color: red;
+}
 /* 태블릿 사이즈 */
 @media screen and (max-width: 1200px) {
 	.main-title {
