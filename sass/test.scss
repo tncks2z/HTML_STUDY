@@ -1,6 +1,56 @@
+// 변수 선언 가능($ 이용)
 $main-color: #2a4cb2;
 $sub-color: #eeee;
 $main-fs: 16px;
+
+// extend 문법
+// % : 임시클래스 -> 단독으로는 compile 되지 않음
+%btn {
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+}
+%box {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+}
+.box-red {
+	@extend %box;
+	background-color: red;
+}
+.box-blue {
+	@extend %box;
+	background-color: blue;
+}
+.box-green {
+	@extend %box;
+	background-color: green;
+}
+.btn-green {
+	@extend %btn;
+	color: green;
+}
+.btn-blue {
+	@extend %btn;
+	color: blue;
+}
+.btn-red {
+	@extend %btn;
+	color: red;
+}
+
+// nesting문법
+.main-bg {
+	h4 {
+		font-size: $main-fs;
+	}
+	button {
+		color: $main-color;
+	}
+}
+
+// 사칙연산 가능
 .background {
 	background-color: $main-color;
 	font-size: ($main-fs / 2px);
