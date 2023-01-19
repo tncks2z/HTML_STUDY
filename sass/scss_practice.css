@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "tvn";
+  src: url("../font/tvN 즐거운이야기OTF Medium.otf");
+}
+@font-face {
+  font-family: "BMJua";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  font-family: "BMJua";
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+li {
+  border: 1px solid #eee;
+  padding: 20px;
+  width: 300px;
+  background-color: white;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #2a4cb2;
+  color: white;
+}
+
+.alert-green {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: lightgreen;
+  color: green;
+  padding-left: 30px;
+}
+.alert-green strong {
+  font-size: 20px;
+}
+
+.alert-blue {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: lightblue;
+  color: blue;
+  padding-left: 30px;
+}
+.alert-blue strong {
+  font-size: 20px;
+}
+
+.alert-red {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: lightpink;
+  color: red;
+  padding-left: 30px;
+}
+.alert-red strong {
+  font-size: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.col-3 {
+  width: 25%;
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid black;
+}/*# sourceMappingURL=scss_practice.css.map */

@@ -1,0 +1,60 @@
+@use 'reset';
+
+$active-color: #2a4cb2;
+@mixin box($mg, $pd, $br) {
+	margin: $mg;
+	padding: $pd;
+	border-radius: $br;
+}
+li {
+	border: 1px solid #eee;
+	padding: 20px;
+	width: 300px;
+	background-color: white;
+	list-style: none;
+}
+li:hover {
+	background-color: $active-color;
+	color: white;
+}
+@mixin alert-box($bg-color, $f-color) {
+	@include box(20px, 10px, 10px);
+	width: 100%;
+	background-color: $bg-color;
+	color: $f-color;
+	padding-left: 30px;
+	strong {
+		font-size: 20px;
+	}
+}
+.alert-green {
+	@include alert-box(lightgreen, green);
+}
+.alert-blue {
+	@include alert-box(lightblue, blue);
+}
+.alert-red {
+	@include alert-box(lightpink, red);
+}
+@mixin row-class() {
+	width: 100%;
+	display: flex;
+}
+@mixin col-class($num) {
+	width: 100% / (12 / $num);
+	background-color: #eee;
+	padding: 10px;
+	border: 1px solid black;
+}
+.row {
+	@include row-class();
+}
+.col-6 {
+	@include col-class(6);
+}
+.col-4 {
+	@include col-class(4);
+}
+.col-3 {
+	@include col-class(3);
+}
