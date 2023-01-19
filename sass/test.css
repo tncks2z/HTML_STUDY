@@ -1,3 +1,24 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "tvn";
+  src: url("../font/tvN 즐거운이야기OTF Medium.otf");
+}
+@font-face {
+  font-family: "BMJua";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
 .btn-red, .btn-blue, .btn-green {
   width: 100px;
   height: 100px;
@@ -8,6 +29,7 @@
   width: 200px;
   height: 200px;
   padding: 20px;
+  background-color: brown;
 }
 
 .box-red {
@@ -23,15 +45,15 @@
 }
 
 .btn-green {
-  color: green;
+  background-color: green;
 }
 
 .btn-blue {
-  color: blue;
+  background-color: blue;
 }
 
 .btn-red {
-  color: red;
+  background-color: red;
 }
 
 .main-bg h4 {
@@ -39,6 +61,24 @@
 }
 .main-bg button {
   color: #2a4cb2;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: blue;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: blue;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: blue;
 }
 
 .background {

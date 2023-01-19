@@ -3,6 +3,9 @@ $main-color: #2a4cb2;
 $sub-color: #eeee;
 $main-fs: 16px;
 
+// use 문법 -> 다른 파일에 있는 내용들을 갖고오고 싶을 때
+@use 'reset';
+
 // extend 문법
 // % : 임시클래스 -> 단독으로는 compile 되지 않음
 %btn {
@@ -14,6 +17,7 @@ $main-fs: 16px;
 	width: 200px;
 	height: 200px;
 	padding: 20px;
+	background-color: reset.$div-color; //use에서 가져온 변수를 사용할 때는 앞에 " 파일명. "을 꼭 붙여줄것
 }
 .box-red {
 	@extend %box;
@@ -29,15 +33,15 @@ $main-fs: 16px;
 }
 .btn-green {
 	@extend %btn;
-	color: green;
+	background-color: green;
 }
 .btn-blue {
 	@extend %btn;
-	color: blue;
+	background-color: blue;
 }
 .btn-red {
 	@extend %btn;
-	color: red;
+	background-color: red;
 }
 
 // nesting문법
@@ -48,6 +52,22 @@ $main-fs: 16px;
 	button {
 		color: $main-color;
 	}
+}
+
+//mixin 문법 -> css를 함수처럼 사용
+@mixin fontStyle($size, $spacing, $param) {
+	font-size: $size;
+	letter-spacing: $spacing;
+	#{ $param }: blue;
+}
+h2 {
+	@include fontStyle(40px, 2px, color);
+}
+h3 {
+	@include fontStyle(30px, 1px, color);
+}
+h4 {
+	@include fontStyle(20px, 0px, color);
 }
 
 // 사칙연산 가능
