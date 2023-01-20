@@ -12,10 +12,10 @@ li {
 	width: 300px;
 	background-color: white;
 	list-style: none;
-}
-li:hover {
-	background-color: $active-color;
-	color: white;
+	&:hover {
+		background-color: $active-color;
+		color: white;
+	}
 }
 @mixin alert-box($bg-color, $f-color) {
 	@include box(20px, 10px, 10px);
