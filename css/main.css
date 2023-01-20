@@ -406,6 +406,33 @@ progress::-webkit-progress-value {
 	transform: translate(-50%, -50%);
 	z-index: 0;
 }
+.ani-text {
+	margin-top: 400px;
+	/* transform: rotate(30deg); 회전 */
+	/* transform: translateX(200px); 좌표이동 */
+	text-align: center;
+}
+.ani-text:hover {
+	animation-name: nice-moving;
+	animation-duration: 1s;
+}
+@keyframes nice-moving {
+	0% {
+		transform: translateX(0px);
+	}
+	25% {
+		transform: translateX(-100px);
+	}
+	50% {
+		transform: translateX(100px);
+	}
+	75% {
+		transform: translateX(-100px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
 /* 태블릿 사이즈 */
 @media screen and (max-width: 1200px) {
 	.main-title {
