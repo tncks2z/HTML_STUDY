@@ -392,6 +392,20 @@ progress::-webkit-progress-value {
 	background-color: red;
 	border-radius: 10px;
 }
+.video-box {
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.video-container {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
 /* 태블릿 사이즈 */
 @media screen and (max-width: 1200px) {
 	.main-title {

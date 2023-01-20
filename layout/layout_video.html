@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="css/main.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- autoplay와 muted 기능을 통해 동영상을 자동재생 할건지 선택 -->
+			<!-- preload기능을 통해 동영상을 미리 다운받아서 재생할건지(auto),안할건지(none), 적당히 할건지(metadata)를 선택 -->
+			<!-- poster 속성을 통해 동영상의 썸네일 설정가능 -->
+			<!-- loop 기능은 동영상 무한반복 재생 -->
+			<video controls preload="metadata" poster="../img/사과_본문.jpg" width="100%">
+				<source src="../video/bridge.mp4" type="video/mp4" />
+			</video>
+			<audio controls preload="metadata" muted>
+				<source src="../video/bass.mp3" />
+			</audio>
+		</div>
+	</body>
+</html>
