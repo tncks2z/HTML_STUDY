@@ -13,10 +13,16 @@
 		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf') format('truetype');
 	font-display: swap;
 }
+html,
 body {
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 	font-size: 20px;
 	font-family: 'BMJua';
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
 }
 div,
 input,
@@ -407,14 +413,99 @@ progress::-webkit-progress-value {
 	z-index: 0;
 }
 .ani-text {
-	margin-top: 400px;
+	margin-top: 10px;
 	/* transform: rotate(30deg); 회전 */
 	/* transform: translateX(200px); 좌표이동 */
 	text-align: center;
 }
 .ani-text:hover {
 	animation-name: nice-moving;
+	animation-duration: 0.5s;
+}
+.btn-blue {
+	width: 200px;
+	height: 80px;
+	margin: 10px;
+	padding: 15px;
+	border: none;
+	border-radius: 15px;
+	background-color: skyblue;
+	color: white;
+	font-size: 20px;
+	display: block;
+	margin: auto;
+}
+.btn-blue:hover {
+	animation-name: nice-shaking;
+	animation-duration: 0.5s;
+}
+.signs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sign-plus {
+	font-size: 200px;
+	display: inline-block;
+}
+.sign-plus:hover {
+	animation-name: nice-plus;
 	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.menu-bar {
+	padding: 20px;
+	float: left;
+	background-color: black;
+	color: white;
+	width: 350px;
+	height: 100%;
+	position: fixed;
+	transition: all 1s;
+	transform: translateX(-200px);
+}
+.menu-bar:hover {
+	transform: translateX(0px);
+}
+.menu-bar:hover h3 {
+	text-align: center;
+}
+.menu-bar:hover li {
+	display: block;
+	animation-name: ani-menubar;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.menu-bar h3 {
+	margin: 20px;
+	text-align: right;
+}
+.menu-list li {
+	margin: 20px;
+	text-align: center;
+	display: none;
+}
+@keyframes ani-menubar {
+	0% {
+		transform: translateX(-250px);
+	}
+	50% {
+		transform: translateX(100px) skew(-20deg);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes nice-plus {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(45deg) scale(1.5);
+	}
 }
 @keyframes nice-moving {
 	0% {
@@ -431,6 +522,23 @@ progress::-webkit-progress-value {
 	}
 	100% {
 		transform: translateX(0px);
+	}
+}
+@keyframes nice-shaking {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }
 /* 태블릿 사이즈 */
