@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'tvn';
+	src: url('../font/tvN\ 즐거운이야기OTF\ Medium.otf');
+}
+@font-face {
+	font-family: 'BMJua';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot');
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.eot?#iefix') format('embedded-opentype'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff2') format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.woff') format('woff'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/BMJua/BMJua.ttf') format('truetype');
+	font-display: swap;
+}
+:root {
+	--main-color: rgb(73, 76, 173);
+}
+body {
+	margin: 0px;
+	font-size: 1.2rem;
+	font-family: 'BMJua';
+}
+div,
+input,
+textarea {
+	box-sizing: border-box;
+}
+.top-bar {
+	display: flex;
+	padding: 20px;
+}
+.input-group {
+	width: 20%;
+	transition: all 1s;
+}
+.input-group input {
+	width: 100%;
+}
+.input-group input:focus {
+	width: 50%;
+}
+.side-bar {
+	display: flex;
+	float: left;
+	width: 200px;
+	height: 100vh;
+	background-color: var(--main-color);
+	position: fixed;
+	overflow: auto;
+	transform: translateX(-100px);
+	transition: all 0.5s;
+	z-index: 5;
+}
+.side-bar:hover {
+	transform: translateX(0px);
+}
+.side-bar:hover i {
+	transform: translateX(0px);
+}
+.side-bar:hover span {
+	display: inline-block;
+}
+.side-bar li {
+	list-style: none;
+	margin: 20px 20px 30px 20px;
+	display: block;
+}
+.side-bar a {
+	text-decoration: none;
+	color: #eee;
+	text-align: left;
+}
+.side-bar i {
+	margin-right: 10px;
+	transform: translateX(85px);
+	transition: all 0.5s;
+}
+.side-bar li a span {
+	display: none;
+}
