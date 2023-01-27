@@ -47,35 +47,24 @@
 			</ul>
 		</nav>
 		<div style="margin-left: 100px">
-			<div class="top-bar shadow">
-				<div class="input-group">
-					<input
-						type="text"
-						class="form-control"
-						placeholder="Search"
-						aria-label="Search"
-						aria-describedby="button-addon2" />
-					<button class="btn btn-secondary" type="button" id="button-addon2">
+			<nav class="top-bar shadow">
+				<form class="d-flex">
+					<input class="form-control input-animation rounded-end-0" type="search" placeholder="Search" />
+					<button class="btn btn-secondary rounded-start-0" type="submit">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
-				</div>
+				</form>
 				<div style="flex-grow: 1"></div>
-				<button type="button" class="btn btn-outline-secondary position-relative border-0 me-4">
+				<a class="nav-link me-4 me-lg-5" href="#">
+					<span class="badge bg-danger"> 3 </span>
 					<i class="fa-solid fa-bell"></i>
-					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-						3
-						<span class="visually-hidden">unread messages</span>
-					</span>
-				</button>
-				<button type="button" class="btn btn-outline-secondary border-0 position-relative me-4">
+				</a>
+				<a class="nav-link me-4 me-lg-5" href="#">
+					<span class="badge bg-danger">5</span>
 					<i class="fa-solid fa-envelope"></i>
-					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-						5
-						<span class="visually-hidden">unread messages</span>
-					</span>
-				</button>
-				<span class="font-grey">Suchan Lim</span>
-			</div>
+				</a>
+				<a class="nav-link font-grey" href="#">Suchan Lim</a>
+			</nav>
 			<div class="dashboard">
 				<h1 class="mb-5">Dashboard</h1>
 				<div class="row g-5 mb-5">
@@ -139,7 +128,7 @@
 								<h3>Earnings Overview</h3>
 							</div>
 							<div class="border-top rounded-bottom-3 p-4 bg-white">
-								<canvas id="myChart"></canvas>
+								<canvas id="myChart" class="w-100 h-100"></canvas>
 							</div>
 						</div>
 					</div>
@@ -174,7 +163,7 @@
 										<h3 class="font-grey">Marked Comments</h3>
 									</div>
 									<div class="col-2 text-center">
-										<h4><span class="badge rounded-pill text-bg-primary">10</span></h4>
+										<h4><span class="badge rounded-pill text-bg-primary">5</span></h4>
 									</div>
 								</div>
 							</div>

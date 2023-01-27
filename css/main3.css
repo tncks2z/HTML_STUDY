@@ -31,18 +31,29 @@ textarea {
 li {
 	list-style: none;
 }
+.form-control {
+	border-right: none;
+}
+.input-animation {
+	width: 300px !important;
+	transition: all 1s;
+}
+.input-animation:focus {
+	width: 450px !important;
+}
 .top-bar {
 	display: flex;
 	align-items: center;
 	padding: 20px;
 	background-color: white;
 }
-.input-group {
-	width: 20%;
-	transition: all 1s;
+.nav-link {
+	position: relative;
 }
-.input-group input:focus .input-group {
-	width: 50%;
+.nav-link .badge {
+	position: absolute;
+	top: -13px;
+	left: 13px;
 }
 .side-bar {
 	display: flex;
@@ -131,5 +142,14 @@ li {
 @media screen and (max-width: 1268px) {
 	.input-group {
 		width: 50%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.input-animation {
+		width: 200px !important;
+		transition: all 1s;
+	}
+	.input-animation:focus {
+		width: 250px !important;
 	}
 }
