@@ -128,3 +128,8 @@ li {
 	border-radius: 10px;
 	border: none;
 }
+@media screen and (max-width: 1268px) {
+	.input-group {
+		width: 50%;
+	}
+}
