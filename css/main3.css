@@ -15,29 +15,33 @@
 }
 :root {
 	--main-color: rgb(73, 76, 173);
+	--background-color: rgb(250, 250, 250);
 }
 body {
 	margin: 0px;
 	font-size: 1.2rem;
 	font-family: 'BMJua';
+	background-color: var(--background-color);
 }
 div,
 input,
 textarea {
 	box-sizing: border-box;
 }
+li {
+	list-style: none;
+}
 .top-bar {
 	display: flex;
+	align-items: center;
 	padding: 20px;
+	background-color: white;
 }
 .input-group {
 	width: 20%;
 	transition: all 1s;
 }
-.input-group input {
-	width: 100%;
-}
-.input-group input:focus {
+.input-group input:focus .input-group {
 	width: 50%;
 }
 .side-bar {
@@ -62,7 +66,6 @@ textarea {
 	display: inline-block;
 }
 .side-bar li {
-	list-style: none;
 	margin: 20px 20px 30px 20px;
 	display: block;
 }
@@ -78,4 +81,50 @@ textarea {
 }
 .side-bar li a span {
 	display: none;
+}
+.dashboard {
+	padding: 50px 20px 50px 20px;
+}
+.white-border {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border-radius: 10px;
+	padding: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+.bg-red {
+	background-color: red;
+}
+.bg-blue {
+	background-color: blue;
+}
+.bg-green {
+	background-color: green;
+}
+.bg-yellow {
+	background-color: yellow;
+}
+.bg-grey {
+	background-color: var(--background-color);
+}
+.card {
+	padding: 0px;
+	border-radius: 10px;
+	height: 200px;
+	border: none;
+}
+.font-grey {
+	color: grey;
+}
+.text h3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.chart {
+	padding: 0px;
+	border-radius: 10px;
+	border: none;
 }
