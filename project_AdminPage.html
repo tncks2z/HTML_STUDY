@@ -47,8 +47,8 @@
 			</ul>
 		</nav>
 		<div style="margin-left: 100px">
-			<div class="top-bar">
-				<div class="input-group mb-3">
+			<div class="top-bar shadow">
+				<div class="input-group">
 					<input
 						type="text"
 						class="form-control"
@@ -60,23 +60,155 @@
 					</button>
 				</div>
 				<div style="flex-grow: 1"></div>
-				<button type="button" class="btn btn-outline-secondary position-relative border-0 me-4 mb-3">
+				<button type="button" class="btn btn-outline-secondary position-relative border-0 me-4">
 					<i class="fa-solid fa-bell"></i>
 					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
 						3
 						<span class="visually-hidden">unread messages</span>
 					</span>
 				</button>
-				<button type="button" class="btn btn-outline-secondary border-0 position-relative me-4 mb-3">
+				<button type="button" class="btn btn-outline-secondary border-0 position-relative me-4">
 					<i class="fa-solid fa-envelope"></i>
 					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
 						5
 						<span class="visually-hidden">unread messages</span>
 					</span>
 				</button>
-				<span>Suchan</span>
+				<span class="font-grey">Suchan Lim</span>
 			</div>
-			<div class="dashboard"></div>
+			<div class="dashboard">
+				<h1 class="mb-5">Dashboard</h1>
+				<div class="row g-5 mb-5">
+					<div class="col-3">
+						<div class="card shadow bg-red">
+							<div class="white-border ms-1 d-flex">
+								<div class="text">
+									<h3 class="font-grey">Earnings (Montly)</h3>
+									<h3>$400,000</h3>
+								</div>
+								<div class="icon font-grey">
+									<i class="fa-solid fa-calendar fa-3x"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card shadow bg-green">
+							<div class="white-border ms-1 d-flex">
+								<div class="text">
+									<h3 class="font-grey">Earnings (Annual)</h3>
+									<h3>$800,000</h3>
+								</div>
+								<div class="icon font-grey">
+									<i class="fa-solid fa-dollar-sign fa-3x"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card shadow bg-blue">
+							<div class="white-border ms-1 d-flex">
+								<div class="text">
+									<h3 class="font-grey">Tasks</h3>
+									<h3>13</h3>
+								</div>
+								<div class="icon font-grey">
+									<i class="fa-solid fa-list fa-3x"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card shadow bg-yellow">
+							<div class="white-border ms-1 d-flex">
+								<div class="text">
+									<h3 class="font-grey">Requests</h3>
+									<h3>26</h3>
+								</div>
+								<div class="icon font-grey">
+									<i class="fa-sharp fa-solid fa-comments fa-3x"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-5">
+					<div class="col-8">
+						<div class="chart bg-grey shadow">
+							<div class="border-bottom p-4">
+								<h3>Earnings Overview</h3>
+							</div>
+							<div class="border-top rounded-bottom-3 p-4 bg-white">
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="chart bg-grey shadow">
+							<div class="border-bottom p-4">
+								<h3>Tasks</h3>
+							</div>
+							<div class="border p-4 bg-white">
+								<div class="row">
+									<div class="col-10">
+										<h3 class="font-grey">Borrowed Item</h3>
+									</div>
+									<div class="col-2 text-center">
+										<h4><span class="badge rounded-pill text-bg-primary">14</span></h4>
+									</div>
+								</div>
+							</div>
+							<div class="border p-4 bg-white">
+								<div class="row">
+									<div class="col-10">
+										<h3 class="font-grey">Trello requests</h3>
+									</div>
+									<div class="col-2 text-center">
+										<h4><span class="badge rounded-pill text-bg-primary">2</span></h4>
+									</div>
+								</div>
+							</div>
+							<div class="border rounded-bottom-3 p-4 bg-white">
+								<div class="row">
+									<div class="col-10">
+										<h3 class="font-grey">Marked Comments</h3>
+									</div>
+									<div class="col-2 text-center">
+										<h4><span class="badge rounded-pill text-bg-primary">10</span></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'line',
+		data: {
+			labels: ['Red', 'Blue', 'Yellow', 'Green'],
+			datasets: [
+				{
+					label: '# of Votes',
+					data: [12, 19, 3, 5],
+					backgroundColor: 'rgb(73, 76, 173)',
+					borderColor: 'rgb(73, 76, 173)',
+					borderWidth: 1,
+					fill: true,
+				},
+			],
+		},
+		options: {
+			scales: {
+				y: {
+					beginAtZero: true,
+				},
+			},
+		},
+	});
+</script>
